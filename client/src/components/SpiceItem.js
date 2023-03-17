@@ -17,7 +17,7 @@ function SpiceItem({ spice, onUpdateSpice, onDeleteSpice }) {
   }
 
   function handleDeleteSpice() {
-    fetch(`/spices/${id}`, {
+    fetch(`http://127.0.0.1:3000/spices/${id}`, {
       method: "DELETE",
     }).then((r) => {
       if (r.ok) {

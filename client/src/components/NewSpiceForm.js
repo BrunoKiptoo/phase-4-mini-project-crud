@@ -20,7 +20,7 @@ function NewSpiceForm({ onAddSpice }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/spices", {
+    fetch("http://127.0.0.1:3000/spices", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
